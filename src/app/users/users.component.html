@@ -1,0 +1,19 @@
+<div class="container-fluid">
+    <div class="row">
+        <h1>Users</h1>
+    </div>
+    <div class="row col-md-6">
+        <table class="table table-bordered table-striped">
+            <tr>
+                <th>#</th>
+                <th>NAME</th>
+                <th>EMAIL</th>
+            </tr>
+            <tr *ngFor="let user of users; let index = index;">
+                <td>{{index + 1}}</td>
+                <td>{{user.name}}</td>
+                <td>{{user.email}}</td>
+            </tr>
+        </table>
+    </div>
+</div>
